@@ -41,7 +41,7 @@ function calculateSalesTax(salesData, taxRates) {
     }
 
     resultObj[obj.name].totalSales += curSalesData;
-    var curSalesTax = rate * curSalesData;
+    curSalesTax = rate * curSalesData;
     resultObj[obj.name].totalTaxes += curSalesTax;
   }
   return resultObj;
